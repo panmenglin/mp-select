@@ -1,0 +1,17 @@
+<view class="select_mask">
+  <view class="select">
+    <view>
+      <span class="select_cancel" bindtap="cancel">取消</span>
+      <span class="select_save" bindtap="save">确定</span>
+    </view>
+    <picker-view style="width: 100%; height: 250px;" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{curRange}}" wx:key="item" class="select_option" bindtap="selectItem" data-value="{{item.value}}" data-index="{{index}}">
+          <icon class="{{item.selected ? 'selected' : ''}}" type="success_no_circle" size="14"/>
+          {{item.label}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+<slot></slot>

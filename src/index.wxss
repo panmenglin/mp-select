@@ -1,0 +1,50 @@
+.select_mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 99999;
+}
+
+.select_mask .select {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+}
+
+.select_option {
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 40px;
+}
+
+.select_option icon {
+  position: absolute;
+  margin-left: -40rpx;
+  margin-top: 12rpx;
+  display: none;
+}
+
+.select_option .selected {
+  display: inline-block;
+}
+
+.select_cancel {
+  color: #1AAD16;
+  font-size: 28rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  padding: 20rpx;
+}
+
+.select_save {
+  float: right;
+  color: #1AAD16;
+  font-size: 28rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+  padding: 20rpx;
+}
