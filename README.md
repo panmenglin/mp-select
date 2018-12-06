@@ -7,7 +7,7 @@
 ### 安装
 
 ```
-npm install --save mp-select
+npm install --save --production mp-select
 ```
 
 ### 引入
