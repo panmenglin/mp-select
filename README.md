@@ -74,15 +74,15 @@ cancel () {
 
 select [默认] 单选
 
- <img src="./doc/select.png" width = "158" height = "255" alt="图片名称" align=center />
+ <img src="./doc/select.png" width = "200" />
 
  multiple 多选
 
- <img src="./doc/multiple.png" width = "158" height = "255" alt="图片名称" align=center />
+ <img src="./doc/multiple.png" width = "200"  />
 
   checkbox 复选框
 
- <img src="./doc/checkbox.png" width = "158" height = "255" alt="图片名称" align=center />
+ <img src="./doc/checkbox.png" width = "200" />
 
 #### require
 
