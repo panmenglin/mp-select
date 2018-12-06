@@ -1,4 +1,4 @@
-<view class="select_mask">
+<view class="select_mask" wx:if="{{curRange && curRange.length > 0}}">
 
   <view wx:if="{{type === 'checkbox'}}" class="check">
     <checkbox-group bindchange="bindChange">
