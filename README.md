@@ -1,16 +1,16 @@
 # mp-select
 
-小程序自定义滚动选择组件
+小程序自定义选择组件
 
 ## 使用
 
-1. 安装
+### 安装
 
 ```
 npm install --save mp-select
 ```
 
-2. 引入
+### 引入
 
 ```json
 {
@@ -19,3 +19,71 @@ npm install --save mp-select
   }
 }
 ```
+
+### 使用
+
+#### wxml
+
+```html
+<mp-select type="select" range="{{range}}" value="{{value}}" bindsaveevent="bindchange" bindcancelevent="cancel" wx:if="{{show}}" ></mp-select>
+
+```
+
+#### js
+
+显示
+
+```javascript
+
+select () {
+  this.setData({
+    show: true
+  })
+}
+
+```
+
+选择
+
+```javascript
+
+bindchange (e) {
+  this.setData({
+    value: e.detail.value,
+    show: false
+  })
+}
+
+```
+
+取消
+
+```javascript
+
+cancel () {
+  this.setData({
+    show: false
+  })
+}
+
+```
+
+### 配置
+
+#### type
+
+select [默认] 单选
+
+ <img src="./doc/select.png" width = "158" height = "255" alt="图片名称" align=center />
+
+ multiple 多选
+
+ <img src="./doc/multiple.png" width = "158" height = "255" alt="图片名称" align=center />
+
+  checkbox 复选框
+
+ <img src="./doc/checkbox.png" width = "158" height = "255" alt="图片名称" align=center />
+
+#### require
+
+单选模式下设置 require 默认选中第一项
