@@ -1,5 +1,19 @@
 <view class="select_mask">
-  <view class="select">
+
+  <view wx:if="{{type === 'checkbox'}}" class="check">
+    <checkbox-group bindchange="bindChange">
+      <label class="checkbox" wx:for="{{curRange}}" wx:key="item">
+        <checkbox value="{{item.value}}" checked="{{item.selected}}"/>
+        <text>{{item.label}}</text>
+      </label>
+    </checkbox-group>
+    <view>
+      <span class="select_cancel" bindtap="cancel">取消</span>
+      <span class="select_save" bindtap="save">确定</span>
+    </view>
+  </view>
+
+  <view wx:else class="select">
     <view>
       <span class="select_cancel" bindtap="cancel">取消</span>
       <span class="select_save" bindtap="save">确定</span>
@@ -13,5 +27,7 @@
       </picker-view-column>
     </picker-view>
   </view>
+
 </view>
+
 <slot></slot>

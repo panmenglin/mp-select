@@ -48,3 +48,41 @@
   margin-right: 20rpx;
   padding: 20rpx;
 }
+
+/* checkbox */
+.check {
+  margin: 0 30rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30rpx 10rpx 0;
+}
+
+.check label {
+  padding: 20rpx 15rpx;
+  width: 50%;
+  font-size: 28rpx;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.check checkbox {
+  transform: scale(0.7,0.7);
+  vertical-align: top;
+  display: inline-block;
+}
+
+.check text {
+  display: inline-block;
+  vertical-align: top;
+  width: 240rpx;
+}
+
+.check checkbox-group {
+  margin-bottom: 40rpx;
+  max-height: 600rpx;
+  overflow: auto;
+}

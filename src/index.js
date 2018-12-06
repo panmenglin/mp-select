@@ -85,7 +85,12 @@ Component({
       })
     },
     bindChange(e) {
-      if (this.properties.type !== 'multiple') {
+      if (this.properties.type === 'checkbox') {
+        this.setData({
+          curValue: e.detail.value
+        })
+        this.changeSelected()
+      } else if (this.properties.type !== 'multiple') {
         const scrollValue = {}
         scrollValue.value = this.properties.range[e.detail.value[0]].value
         this.selectItem(null, scrollValue)
